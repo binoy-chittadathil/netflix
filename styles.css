@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 110vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    border-bottom: solid 8px rgb(24, 24, 24);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+}
+nav button{
+    background-color: #db0001;
+    color: white;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+}
+.laung-btn{
+    background-color: transparent;
+    border: 1px solid #7c7a7a;
+    padding: 7px 10px;
+    color: white;
+    border-radius: 4px;
+}
+.laung-btn img{
+    width: 10px;
+    margin-left: 10px;
+}
+.header-content{
+    position: absolute;
+    top:42%;
+    left:50%;
+    transform: translate(-50%);
+    text-align: center;
+    width: 100%;
+}
+.header-content h1{
+    font-size: 50px;
+    line-height: 5rem
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 3rem;
+}
+.header-content p{
+    font-size: 19px;
+}
+.email-signup {
+    margin-top: 20px;
+    display: flex;
+    position: absolute;
+    left:29%;
+    gap: 0.5rem;
+}
+.email-signup input{
+    width: 23rem;
+    padding: 20px 18px;
+    background-color: rgb(10, 10, 10);
+    border: 1px solid white;
+    opacity: .7;
+    font-size: 17px;
+    border-radius: 4px;
+    color: white;
+}
+::placeholder {
+    color: white;
+    opacity: 1;
+  }
+.email-signup button{
+    width:12rem;
+    font-size: 25px;
+    border-radius: 4px;
+    border: none;
+    background-color: #db0001;
+    color: white;
+    font-weight:bold;
+}
+.features .row{
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    border-bottom: solid 8px rgb(24, 24, 24);
+    flex-wrap: wrap;
+}
+.text-col{
+    padding: 50px 12%;
+    width: 52%;
+}
+.text-col h2{
+    font-size: 2.8rem;
+}
+.text-col p{
+    font-size: 1.5rem;
+}
+.img-col{
+    padding: 50px 5%;
+}
+.img-col img{
+    width: 500px;
+}
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: solid 8px rgb(24, 24, 24);
+}
+.faq h1{
+    font-weight: 800;
+    font-size: 40px;
+}
+.questions{
+    margin: 60px auto;
+    width: 100%;
+}
+.questions li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.questions li label{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background: #303030;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 2px;
+}
+.questions label::after{
+    content: "+";
+    font-size: 70px;
+    font-weight: none;
+    position: absolute;
+    right: 20px;
+    
+}
+.questions input[type="radio"]{
+    display: none;
+}
+.questions .content{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition:max-height 0.5s,padding 0.5s ;
+    font-size: 25px;
+}
+.questions input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.questions input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.faq .email-signup{
+    position: static;
+    padding-left: 22.5%;
+    padding-bottom: 70px;
+}
+footer{
+    padding:60px 12% 10px;
+}
+footer .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+footer p{
+    line-height: 40px;
+    color: rgba(255,255,255,0.7);
+}
+footer p a{
+    color: rgba(255,255,255,0.7);
+}
+footer .col{
+   flex-basis: 25%;
+}
+.col a{
+    display: block;
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    line-height: 40px;
+}
+.end-name{
+    font-size: 14px;
+    line-height: 60px;
+}
